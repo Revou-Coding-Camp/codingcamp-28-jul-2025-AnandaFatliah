@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/yap.jpeg" alt="logo" class="circle">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Our Profile</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="welcome">
+  <h1>Hi <span id="visitorName">Visitor</span>, Welcome To Website</h1>
+  <p>Ini adalah website latihan pertama</p>
+</section>
+
+  <section id="nameInputSection">
+    <label for="nameInput">Masukkan Nama Anda:</label>
+    <input type="text" id="nameInput" placeholder="Nama Anda">
+    <button onclick="storeName()">Simpan</button>
+  </section>
+
+
+  <section id="headquarter">
+    <h2>Our Headquarter</h2>
+    <div class="cities">
+      <div class="circle">Jakarta</div>
+      <div class="circle">Bandung</div>
+      <div class="circle">Surabaya</div>
+    </div>
+  </section>
+
+  <section id="message">
+    <h2>Message Us</h2>
+    <form id="messageForm">
+      <label>Nama: <input type="text" id="name" required></label> <br>
+
+      <label>Tanggal Lahir: <input type="date" id="dob" required></label> <br>
+
+      <label>Jenis Kelamin:</label> <br>
+      <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label> <br> 
+      <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label> <br>
+
+      <label>Pesan: <textarea id="messageText" required></textarea></label> <br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="outputBox"></div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
